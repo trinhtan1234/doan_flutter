@@ -1,4 +1,4 @@
-package com.example.doan_flutter
+package com.example.flutter_application_3
 
 import io.flutter.embedding.android.FlutterActivity
 
