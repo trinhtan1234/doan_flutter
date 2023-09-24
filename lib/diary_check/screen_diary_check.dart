@@ -67,6 +67,9 @@ class _ScreenDiaryCheckState extends State<ScreenDiaryCheck> {
                             fit: BoxFit.cover,
                           ),
                         ),
+                        child: const Center(
+                          child: Text('Your other conten'),
+                        ),
                       ),
                     ],
                   ),

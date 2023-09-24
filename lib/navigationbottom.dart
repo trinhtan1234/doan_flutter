@@ -35,8 +35,7 @@ class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.map), label: 'Bản đồ'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.mediation), label: 'Nhật ký kiểm tra'),
+          BottomNavigationBarItem(icon: Icon(Icons.check_box), label: 'Check'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Tài khoản'),
         ],
       ),
