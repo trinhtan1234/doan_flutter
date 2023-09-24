@@ -11,18 +11,26 @@ class _FormTextInputCheckState extends State<FormTextInputCheck> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text('Nhập thông tin kiểm tra'),
-      content: TextField(
+      title: const Text('Nhập thông tin kiểm tra'),
+      content: const TextField(
         decoration: InputDecoration(
           hintText: 'Mô tả',
+          icon: Icon(Icons.record_voice_over),
         ),
       ),
       actions: <Widget>[
-        FloatingActionButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          child: Text('Cập nhật'),
+        SizedBox(
+          width: 80,
+          child: FloatingActionButton(
+            backgroundColor: Colors.brown,
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text(
+              'Cập nhật',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ),
       ],
     );

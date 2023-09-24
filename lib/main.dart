@@ -1,6 +1,5 @@
+import 'package:doan_flutter/navigationbottom.dart';
 import 'package:flutter/material.dart';
-
-import 'navigationbottom.dart';
 
 void main() {
   runApp(const MyApp());

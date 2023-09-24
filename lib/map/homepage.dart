@@ -199,22 +199,20 @@ class _ScreenMapState extends State<ScreenMap> {
           Positioned(
             left: 200,
             bottom: 10,
-            child: Container(
-              child: FloatingActionButton(
-                backgroundColor: Colors.brown,
-                onPressed: () {
-                  showDialog(
-                    context: context,
-                    builder: (context) {
-                      return FormTextInputCheck();
-                    },
-                  );
-                },
-                child: const Icon(
-                  Icons.add,
-                  size: 55,
-                  color: Colors.white,
-                ),
+            child: FloatingActionButton(
+              backgroundColor: Colors.brown,
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return const FormTextInputCheck();
+                  },
+                );
+              },
+              child: const Icon(
+                Icons.add,
+                size: 55,
+                color: Colors.white,
               ),
             ),
           ),
