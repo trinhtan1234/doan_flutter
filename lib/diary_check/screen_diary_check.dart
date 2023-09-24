@@ -43,34 +43,107 @@ class _ScreenDiaryCheckState extends State<ScreenDiaryCheck> {
               itemCount: jsonData?.length,
               itemBuilder: (BuildContext context, int index) {
                 Map<String, dynamic> itemData = jsonData?[index] ?? {};
-
-                double itemPrice = (itemData['price'] ?? 0).toDouble();
+                String itemTitle = itemData['title'] ?? '';
                 String itemImage = itemData['image'] ?? '';
+                String itemDescription = itemData['description'] ?? '';
 
                 return Container(
-                  padding: const EdgeInsets.all(10),
-                  margin: const EdgeInsets.all(10),
+                  height: 500,
+                  padding: const EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Column(
                     children: [
-                      Text(itemImage),
-                      const SizedBox(height: 8),
-                      Text('$itemPrice'),
-                      const SizedBox(height: 8),
-                      Container(
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: NetworkImage(itemImage),
-                            fit: BoxFit.cover,
+                      //User người dùng
+                      Row(
+                        children: [
+                          ClipOval(
+                            child: Image.asset(
+                              'assets/images/1.jpg',
+                              width: 50,
+                              height: 50,
+                              fit: BoxFit.cover,
+                            ),
                           ),
-                        ),
-                        child: const Center(
-                          child: Text('Your other conten'),
+                          const Padding(padding: EdgeInsets.only(left: 10)),
+                          Expanded(
+                            child: Column(
+                              children: [
+                                Row(
+                                  children: [
+                                    Flexible(
+                                      child: Text(itemTitle),
+                                    ),
+                                  ],
+                                ),
+                                const Row(
+                                  children: [
+                                    Text('1d'),
+                                    Text('-'),
+                                    Icon(
+                                      Icons.public_outlined,
+                                      color: Colors.grey,
+                                      size: 15,
+                                    ),
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: const Icon(
+                              Icons.add,
+                              color: Colors.black,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Flexible(
+                            child: Text(
+                              itemDescription,
+                              maxLines: 3,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Flexible(
+                        child: Image.network(
+                          itemImage,
+                          fit: BoxFit.fill,
                         ),
                       ),
+                      const Row(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            child: Icon(Icons.thumb_up_outlined),
+                          ),
+                          Positioned(
+                            left: 20,
+                            child: Icon(Icons.favorite_outlined),
+                          ),
+                          Text('Hoàng hà và 200 người khác')
+                        ],
+                      ),
+                      const Divider(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          TextButton(
+                              onPressed: () {}, child: const Text('Thích')),
+                          TextButton(
+                              onPressed: () {}, child: const Text('Bình luận')),
+                          TextButton(
+                              onPressed: () {}, child: const Text('Chia sẻ')),
+                        ],
+                      ),
+                      const Divider(),
                     ],
                   ),
                 );
