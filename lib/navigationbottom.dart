@@ -1,5 +1,5 @@
 import 'package:doan_flutter/acount/screen_login.dart';
-import 'package:doan_flutter/diary_check/screen_diary_check.dart';
+import 'package:doan_flutter/diary_check/home_diary_check.dart';
 import 'package:doan_flutter/map/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +21,7 @@ class _ScreenNavigationBottomState extends State<ScreenNavigationBottom> {
 
   final List<Widget> _pages = [
     const ScreenMap(),
-    const ScreenDiaryCheck(),
+    const HomeDiaryCheck(),
     const ScreenLogin(),
   ];
 

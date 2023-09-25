@@ -1,0 +1,43 @@
+[10:13:31]: Spawning C:\src\flutter\bin\flutter.bat with args ["run","--machine","--start-paused","-d","emulator-5554","--devtools-server-address","http://127.0.0.1:9100/","--target","lib\\main.dart"]
+[10:13:31]: ..  in D:\Flutter\doan_flutter
+[10:13:31]: ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[10:13:31]: PID: 13580
+[10:13:32]: <== [{"event":"daemon.connected","params":{"version":"0.6.1","pid":12856}}]
+[10:13:32]: <== [{"event":"app.start","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","deviceId":"emulator-5554","directory":"D:\\Flutter\\doan_flutter","supportsRestart":true,"launchMode":"run","mode":"debug"}}]
+[10:13:32]: <== Launching lib\main.dart on sdk gphone x86 64 in debug mode...
+[10:13:33]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"0","progressId":null,"message":"Running Gradle task 'assembleDebug'...","finished":false}}]
+[10:13:39]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"0","progressId":null,"finished":true}}]
+[10:13:39]: <== √  Built build\app\outputs\flutter-apk\app-debug.apk.
+[10:13:40]: <== D/FlutterGeolocator( 5327): Attaching Geolocator to activity
+[10:13:40]: <== D/FlutterGeolocator( 5327): Creating service.
+[10:13:40]: <== D/FlutterGeolocator( 5327): Binding to location service.
+[10:13:40]: <== D/FlutterLocationService( 5327): Creating service.
+[10:13:40]: <== D/FlutterLocationService( 5327): Binding to location service.
+[10:13:41]: <== D/FlutterGeolocator( 5327): Geolocator foreground service connected
+[10:13:41]: <== D/FlutterGeolocator( 5327): Initializing Geolocator services
+[10:13:41]: <== D/FlutterGeolocator( 5327): Flutter engine connected. Connected engine count 1
+[10:13:41]: <== [{"event":"app.debugPort","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","port":53785,"wsUri":"ws://127.0.0.1:53785/5pFJWBQwVjY=/ws","baseUri":"file:///data/user/0/com.example.flutter_application_3/code_cache/doan_flutterDDQDSF/doan_flutter/"}}]
+[10:13:41]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"1","progressId":null,"message":"Syncing files to device sdk gphone x86 64...","finished":false}}]
+[10:13:41]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"1","progressId":null,"finished":true}}]
+[10:13:41]: <== [{"event":"app.started","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b"}}]
+[10:13:41]: <== I/r_application_3( 5327): Compiler allocated 4533KB to compile void android.view.ViewRootImpl.performTraversals()
+[10:13:44]: <== W/Parcel  ( 5327): Expecting binder but got null!
+[10:30:40]: ==> [{"id":"1","method":"app.restart","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","fullRestart":true,"pause":true,"reason":"manual"}}]
+[10:30:40]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"2","progressId":"hot.restart","message":"Performing hot restart...","finished":false}}]
+[10:30:40]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"3","progressId":null,"message":"Syncing files to device sdk gphone x86 64...","finished":false}}]
+[10:30:41]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"3","progressId":null,"finished":true}}]
+[10:30:41]: <== E/flutter ( 5327): [ERROR:flutter/runtime/dart_vm_initializer.cc(41)] Unhandled Exception: Unable to load asset: "assets/locations.json".
+[10:30:41]: <== E/flutter ( 5327): The asset does not exist or has empty data.
+[10:30:41]: <== E/flutter ( 5327): #0      PlatformAssetBundle.load.<anonymous closure> (package:flutter/src/services/asset_bundle.dart:331:9)
+[10:30:41]: <== E/flutter ( 5327): <asynchronous suspension>
+[10:30:41]: <== E/flutter ( 5327): #1      AssetBundle.loadString (package:flutter/src/services/asset_bundle.dart:90:27)
+[10:30:41]: <== E/flutter ( 5327): <asynchronous suspension>
+[10:30:41]: <== E/flutter ( 5327): #2      _ScreenMapState.loadGeoJSON (package:doan_flutter/map/homepage.dart:118:9)
+[10:30:41]: <== E/flutter ( 5327): <asynchronous suspension>
+[10:30:41]: <== E/flutter ( 5327):
+[10:30:41]: <== [{"event":"app.progress","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b","id":"2","progressId":"hot.restart","finished":true}}]
+[10:30:41]: <== Restarted application in 1.622ms.
+[10:30:41]: <== [{"id":"1","result":{"code":0,"message":""}}]
+[10:31:41]: ==> [{"id":"2","method":"app.stop","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b"}}]
+[10:31:41]: <== Application finished.
+[10:31:41]: <== [{"event":"app.stop","params":{"appId":"1f48264e-e553-4332-8d78-a8c35fc8814b"}}]

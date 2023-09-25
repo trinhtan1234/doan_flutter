@@ -112,10 +112,12 @@ class _ScreenDiaryCheckState extends State<ScreenDiaryCheck> {
                           ),
                         ],
                       ),
-                      Flexible(
-                        child: Image.network(
-                          itemImage,
-                          fit: BoxFit.fill,
+                      Expanded(
+                        child: Flexible(
+                          child: Image.network(
+                            itemImage,
+                            fit: BoxFit.fill,
+                          ),
                         ),
                       ),
                       const Row(
@@ -136,14 +138,26 @@ class _ScreenDiaryCheckState extends State<ScreenDiaryCheck> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           TextButton(
-                              onPressed: () {}, child: const Text('Thích')),
+                              onPressed: () {}, child: const Text('Theo dõi')),
                           TextButton(
-                              onPressed: () {}, child: const Text('Bình luận')),
+                              onPressed: () {}, child: const Text('Trao đổi')),
                           TextButton(
-                              onPressed: () {}, child: const Text('Chia sẻ')),
+                              onPressed: () {},
+                              child: const Text('Xem vị trí')),
                         ],
                       ),
-                      const Divider(),
+                      //  Row(
+                      //   children: [
+                      //     Icon(Icons.person),
+                      //     TextField(
+                      //       decoration: InputDecoration(
+                      //           border: OutlineInputBorder(
+                      //             borderSide: BorderSide(),
+                      //           ),
+                      //           labelText: 'Bình luận'),
+                      //     ),
+                      //   ],
+                      // ),
                     ],
                   ),
                 );
