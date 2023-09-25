@@ -49,8 +49,8 @@ class _ScreenDiaryCheckState extends State<ScreenDiaryCheck> {
 
                 return Container(
                   height: 500,
-                  padding: const EdgeInsets.all(5),
-                  margin: const EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     border: Border.all(color: Colors.grey),
                     borderRadius: BorderRadius.circular(10),

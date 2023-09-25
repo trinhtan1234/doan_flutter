@@ -11,55 +11,53 @@ class _HomeDiaryCheckState extends State<HomeDiaryCheck> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-      margin: EdgeInsets.only(top: 20),
-      child: DefaultTabController(
+      body: DefaultTabController(
+        initialIndex: 1,
         length: 2,
-        child: SizedBox(
-          child: Column(
-            children: [
-              Expanded(
-                child: Container(
-                  margin: const EdgeInsets.only(right: 10),
-                  child: const Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TabBar(
-                        indicatorColor: Colors.blue,
-                        labelColor: Colors.blue,
-                        unselectedLabelColor: Colors.black,
-                        labelStyle: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.normal,
-                        ),
-                        tabs: [
-                          Tab(text: 'Danh sách kiểm tra'),
-                          Tab(text: 'Quan tâm'),
-                        ],
+        child: Scaffold(
+          appBar: AppBar(
+            title: Container(
+              width: double.infinity,
+              height: 40,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(5)),
+              child: Center(
+                child: TextField(
+                  decoration: InputDecoration(
+                      prefixIcon: const Icon(Icons.search),
+                      suffixIcon: IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () {},
                       ),
-                    ],
-                  ),
+                      hintText: 'Search...',
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(30))),
                 ),
               ),
-              const SizedBox(
-                height: 740,
-                child: DecoratedBox(
-                  decoration: BoxDecoration(color: Colors.white),
-                  child: TabBarView(
-                    children: [
-                      Center(child: ScreenDiaryCheck()),
-                      Center(
-                        child: Text('data'),
-                      )
-                    ],
-                  ),
+            ),
+            bottom: const TabBar(
+              tabs: <Widget>[
+                Tab(
+                  text: 'Danh sách kiểm tra',
                 ),
+                Tab(
+                  text: 'Quan tâm',
+                )
+              ],
+            ),
+          ),
+          body: const TabBarView(
+            children: <Widget>[
+              Center(
+                child: ScreenDiaryCheck(),
+              ),
+              Center(
+                child: Text('Data'),
               )
             ],
           ),
         ),
       ),
-    ));
+    );
   }
 }
