@@ -11043,3 +11043,51 @@
 [15:59:16]: <== Another exception was thrown: Incorrect use of ParentDataWidget.
 [15:59:16]: <== Another exception was thrown: Incorrect use of ParentDataWidget.
 [15:59:16]: <== Another exception was thrown: Incorrect use of ParentDataWidget.
+[16:01:08]: ==> [{"id":"63","method":"app.restart","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[16:01:08]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"125","progressId":"hot.restart","message":"Performing hot restart...","finished":false}}]
+[16:01:08]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"126","progressId":null,"message":"Waiting for connection from debug service on Chrome...","finished":false}}]
+[16:01:08]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"126","progressId":null,"finished":true}}]
+[16:01:08]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"125","progressId":"hot.restart","finished":true}}]
+[16:01:08]: <== Restarted application in 203ms.
+[16:01:08]: <== [{"id":"63","result":{"code":0,"message":""}}]
+[16:01:08]: ==> [{"id":"64","method":"app.restart","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","fullRestart":false,"pause":false,"reason":"save","debounce":true}}]
+[16:01:09]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"127","progressId":"hot.restart","message":"Performing hot restart...","finished":false}}]
+[16:01:09]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"128","progressId":null,"message":"Waiting for connection from debug service on Chrome...","finished":false}}]
+[16:01:09]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"128","progressId":null,"finished":true}}]
+[16:01:09]: <== Error while trying to load an asset: Flutter Web engine failed to fetch "assets/assets/locations.json". HTTP request succeeded, but the server responded with HTTP status 404.
+[16:01:09]: <== [{"event":"app.progress","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538","id":"127","progressId":"hot.restart","finished":true}}]
+[16:01:09]: <== Restarted application in 539ms.
+[16:01:09]: <== [{"id":"64","result":{"code":0,"message":""}}]
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Another exception was thrown: LateInitializationError: Field '_dimensionsProvider' has not been initialized.
+[16:01:09]: <== Another exception was thrown: Binding has not yet been initialized.
+[16:01:09]: <== Error while trying to load an asset: Flutter Web engine failed to fetch "assets/assets/locations.json". HTTP request succeeded, but the server responded with HTTP status 404.
+[16:01:09]: <== Another exception was thrown: Assertion failed: file:///C:/src/flutter/packages/flutter/lib/src/rendering/binding.dart:366:12
+[16:01:10]: <== Error: Unable to load asset: "assets/locations.json".
+[16:01:10]: <== The asset does not exist or has empty data.
+[16:01:10]: <== dart-sdk/lib/_internal/js_dev_runtime/private/ddc_runtime/errors.dart 294:49  throw_
+[16:01:10]: <== packages/flutter/src/services/asset_bundle.dart 331:9                         <fn>
+[16:01:10]: <== dart-sdk/lib/async/zone.dart 1661:54                                          runUnary
+[16:01:10]: <== dart-sdk/lib/async/future_impl.dart 156:18                                    handleValue
+[16:01:10]: <== dart-sdk/lib/async/future_impl.dart 840:44                                    handleValueCallback
+[16:01:10]: <== dart-sdk/lib/async/future_impl.dart 869:13                                    _propagateToListeners
+[16:01:10]: <== dart-sdk/lib/async/future_impl.dart 641:5                                     [_completeWithValue]
+[16:01:10]: <== dart-sdk/lib/async/future_impl.dart 715:7                                     callback
+[16:01:10]: <== dart-sdk/lib/async/schedule_microtask.dart 40:11                              _microtaskLoop
+[16:01:10]: <== dart-sdk/lib/async/schedule_microtask.dart 49:5                               _startMicrotaskLoop
+[16:01:10]: <== dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 181:15           <fn>
+[16:01:28]: ==> [{"id":"65","method":"app.stop","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538"}}]
+[16:01:29]: <== Application finished.
+[16:01:29]: <== [{"id":"65","result":true}]
+[16:01:29]: <== [{"event":"app.stop","params":{"appId":"ee375dc8-ebbd-40dc-8b69-fb9404427538"}}]
