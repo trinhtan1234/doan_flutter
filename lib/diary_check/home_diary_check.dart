@@ -12,7 +12,7 @@ class _HomeDiaryCheckState extends State<HomeDiaryCheck> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: DefaultTabController(
-        initialIndex: 1,
+        initialIndex: 0,
         length: 2,
         child: Scaffold(
           appBar: AppBar(

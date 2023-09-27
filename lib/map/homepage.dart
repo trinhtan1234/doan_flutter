@@ -115,7 +115,7 @@ class _ScreenMapState extends State<ScreenMap> {
 // Lấy dữ liệu từ file json
   Future<void> loadGeoJSON() async {
     String geoJSONContent =
-        await rootBundle.loadString('assets/locations.json');
+        await rootBundle.loadString('assets/dulieu/locations.json');
     Map<String, dynamic> geoJSONData = json.decode(geoJSONContent);
     List<dynamic> features = geoJSONData['features'];
 
